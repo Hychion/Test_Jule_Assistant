@@ -1,0 +1,31 @@
+[project]
+name = "vehicle-scraper"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "google-labs-jules[bot]",email = "161369871+google-labs-jules[bot]@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "httpx (>=0.27.0)",
+    "beautifulsoup4 (>=4.12.3)",
+    "sqlalchemy (>=2.0.29)",
+    "sqlmodel (>=0.0.16)",
+    "typer[all] (>=0.12.3)",
+    "structlog (>=24.1.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.1.1"
+pytest-cov = ">=5.0.0"
+ruff = ">=0.4.1"
+mypy = ">=1.9.0"
+black = ">=24.4.0"
+pre-commit = ">=3.7.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
